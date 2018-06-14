@@ -1,6 +1,9 @@
 import React  from "react";
 import Cards from "./components/cards/cards.js";
-//import cardsImages from "./cardImages.json";
+import Wrapper from "./components/Wrapper";
+
+
+
 
 const App = () => <Cards />;
 

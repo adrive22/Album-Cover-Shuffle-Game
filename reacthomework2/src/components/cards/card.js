@@ -3,14 +3,16 @@
 import React from "react";
 import cards from "./cards.css";
 
-const Card = (props) => {
+const Card = props => {
     console.log(props)
-    return (
+   return(
+       <div className="actualCard" onClick={() => console.log(props.cardData.id)}>
         <div className="cardsContainer">
             <img className="cardImages" alt="placeholder" src={require(`../../images/${props.cardData.image}`)}/>
+        </div>  
             
-        </div>        
-    )
+        </div> 
+   )
 }
 
 export default Card;
