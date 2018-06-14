@@ -1,3 +1,5 @@
+//this component/method will draw the data from the looped images in cards.js file to input into the html
+
 import React from "react";
 import cards from "./cards.css";
 
