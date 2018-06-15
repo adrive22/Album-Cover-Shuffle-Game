@@ -5,8 +5,8 @@ import React from "react";
 import cardsImages from "./cardImages.json";
 import Card from "./card";
 
-const Cards = () => {
-    return cardsImages.map( item => <Card cardData={ item }/> )
+const Cards = (props) => {
+    return cardsImages.map( item => <Card cardData={ item } clickCount={ props.clickCount }/> )
 };
 
 export default Cards;

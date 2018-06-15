@@ -4,9 +4,9 @@ import React from "react";
 import cards from "./cards.css";
 
 const Card = props => {
-    console.log(props)
+    //console.log(props)
    return(
-       <div className="actualCard" onClick={() => console.log(props.cardData.id)}>
+       <div className="actualCard" onClick={() => props.clickCount(props.cardData.id)}>
         <div className="cardsContainer">
             <img className="cardImages" alt="placeholder" src={require(`../../images/${props.cardData.image}`)}/>
         </div>  
