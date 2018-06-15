@@ -21,7 +21,7 @@ class App extends Component{
 
         
           if(this.state.usedIds.some(item => item===id)){
-              console.log("game over");
+              alert("you clicked the same image twice! try again");
               this.setState({
                   usedIds:[],
                   score:0
@@ -49,6 +49,7 @@ class App extends Component{
     render(){
         return(
             <Wrapper>
+               <Header score={this.state.score} highscore={this.state.highscore}>Album Cover Art Shuffle Game</Header>
                 <Cards clickCount={this.clickCount}/>
             </Wrapper>
         )
